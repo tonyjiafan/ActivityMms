@@ -1,0 +1,22 @@
+{
+  "name": "1and1",
+  "version": "1.0.0",
+  "description": "Activity",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonyjiafan/ActivityMms.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "贾青松",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tonyjiafan/ActivityMms/issues"
+  },
+  "homepage": "https://github.com/tonyjiafan/ActivityMms#readme"
+}
