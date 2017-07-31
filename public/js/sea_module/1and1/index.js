@@ -1,0 +1,12 @@
+define(function(require,exports,module){
+  //引入模块
+  var $ = require('../../outerPlugin/jquery.min'),
+      util = require('../../util'),
+      reqAjax = util.reqAjax;
+
+  console.log('我是index页面的js')
+
+
+
+
+}) //define闭合标记

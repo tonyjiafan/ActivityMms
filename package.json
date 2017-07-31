@@ -4,7 +4,8 @@
   "description": "Activity",
   "main": "app.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dev": "sudo nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,19 @@
   "bugs": {
     "url": "https://github.com/tonyjiafan/ActivityMms/issues"
   },
-  "homepage": "https://github.com/tonyjiafan/ActivityMms#readme"
+  "homepage": "https://github.com/tonyjiafan/ActivityMms#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-webserver": "^0.9.1"
+  }
 }
