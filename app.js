@@ -41,5 +41,5 @@ handleStatusError(500)
 
 
 app.listen(5000,function(){
-	console.log('服务启动了 =====> http://localhost:5000')
+	console.log('Activity=>http://localhost:5000')
 });

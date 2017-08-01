@@ -9,8 +9,8 @@ exports.url = function(app){
   app.get('/',function(req,res){
     let url = config.autoEnv + config.apis.getData;
         _http.commonHttp('GET', url, {}, function (data) {
-          res.render('pages/index',{
-            layout:'index',
+          res.render('pages/1and1/index',{
+            layout:'index_1and1',
             title:'首页',
             allData:data.books,
             seaModule:'/static/js/sea_module/1and1/index.js',  //没有使用模块化必须要配置完整的路劲和文件名

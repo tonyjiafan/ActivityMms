@@ -17,7 +17,7 @@ var gulp = require('gulp'),
     gulp.task('webserver', function () {
         gulp.src('./') // 服务器目录（./代表根目录）
         .pipe(webserver({ // 运行gulp-webserver
-            port:8000,   //默认端口号是8080
+            port:8080,   //默认端口号是8080
             livereload: true, // 启用LiveReload
             // open: 'http://localhost:5000/' // 服务器启动时自动打开网页
             // open: true // 服务器启动时自动打开网页
