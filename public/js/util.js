@@ -2,25 +2,21 @@
 define(function(require,exports,module){
   var $ = require('./base/jquery.min');
   //ajax提交
-  exports.reqAjax = function(type,url,data,async,callback1,callback2){ //callback2为失败回调
-    $.ajax({
-             type:type,
-             url:url,
-             data:{param:data},
-             datatype:'json',
-             async:async
-             }).done(function(data){
-              if(data.success){
-                    callback1(data)
-                } else {
-                     console.log('错误')
-                }
-             }).fail(function(){
-               console.log('服务器正在维护中')
+  exports.reqAjax = function(type,url,data,callback){
+      $.ajax({
+      type: type,
+      url: url,
+      dataType:'json',
+      data:data,
+      success: function(data){
+          callback(data)
+      },
+      error: function(xhr,type){
+        console.log('请求出现了错误')
+      }
     })
   }
 
-  //cookie操作
 	//设置cookie
 		exports.setCookie = function(name,value) {
 		    var exp = new Date();

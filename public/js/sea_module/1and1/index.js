@@ -6,7 +6,7 @@ define(function(require,exports,module){
 
   console.log('我是index页面的js')
 
-  console.log($)
+  console.log(util)
 
 
 }) //define闭合标记
