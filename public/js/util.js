@@ -1,6 +1,6 @@
 'use strict'
 define(function(require,exports,module){
-  var $ = require('./outerPlugin/jquery.min');
+  var $ = require('./base/jquery.min');
   //ajax提交
   exports.reqAjax = function(type,url,data,async,callback1,callback2){ //callback2为失败回调
     $.ajax({

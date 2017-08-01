@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),  //sass
     plumber = require('gulp-plumber'), //禁止sass报错
     livereload = require('gulp-livereload'),  // 网页自动刷新（服务器控制客户端同步刷新）
-    webserver = require('gulp-webserver');  // 本地服务器 gulp-webserver
+    webserver = require('gulp-webserver');  // 本地服务 gulp-webserver
 
     // 注册任务
     gulp.task('sass', function () {

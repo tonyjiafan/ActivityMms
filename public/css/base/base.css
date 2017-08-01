@@ -1,0 +1,442 @@
+/* alice.base 样式模块 */
+
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html {
+    color:#000;background:#fff;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    margin:0;padding:0;
+    font-weight:normal;
+}
+
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+/* HTML5 媒体文件跟 img 保持一致 */
+audio,canvas,video {
+    display: inline-block;*display: inline;*zoom: 1;
+}
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+body,button,input,select,textarea {
+    font:12px/1.5 Microsoft YaHei;
+}
+input,select,textarea {
+    font-size:100%;
+}
+
+/* 去掉各Table  cell 的边距并让其边重合 */
+table {
+    border-collapse:collapse;border-spacing:0;
+}
+
+/* IE bug fixed: th 不继承 text-align*/
+th {
+    text-align:inherit;
+}
+
+/* 去除默认边框 */
+fieldset,img {
+    border:0;
+/*    display: block;*/
+}
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe {
+    display:block;
+}
+
+/* 去掉 firefox 下此元素的边框 */
+abbr,acronym {
+    border:0;font-variant:normal;
+}
+
+/* 一致的 del 样式 */
+del {
+    text-decoration:line-through;
+}
+
+address,caption,cite,code,dfn,em,th,var {
+    font-style:normal;
+    font-weight:500;
+}
+
+/* 去掉列表前的标识, li 会继承 */
+ol,ul {
+    list-style:none;
+}
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption,th {
+    text-align:left;
+}
+
+q:before,q:after {
+    content:'';
+}
+
+/* 统一上标和下标 */
+sub, sup {
+    font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;
+}
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+/* 正常链接 未访问、已经访问 */
+a:link,a:active,a:visited {
+/*    color: #333;*/
+    text-decoration: none;
+}
+
+/* 鼠标悬停 */
+a:hover {
+    color: #FF0000;
+}
+/*背景色*/
+.backgroundDeep {
+	background:#000;
+}
+.backgroundWhite {
+    background:#fff;
+}
+/* 默认不显示下划线，保持页面简洁 */
+ins,a {
+    text-decoration:none;
+}
+
+/* 代码字体 */
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/* 清理浮动 */
+.fn-clear:after {
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+.fn-clear {
+    zoom:1; /* for IE6 IE7 */
+}
+
+/* 隐藏, 通常用来与 JS 配合 */
+body .fn-hide {
+    display:none;
+}
+
+/* 设置内联, 减少浮动带来的bug */
+.fn-left,
+.fn-right {
+    display:inline;
+}
+.fn-left {
+    float:left;
+}
+.fn-right {
+    float:right;
+}
+
+/* 单行文字溢出时出现省略号，需设定宽度 */
+.fn-text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 简单的渐变 */
+.fn-linear {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f1f1f1));
+    background: -moz-linear-gradient(top, #fcfcfc, #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f1f1f1');
+    background:-o-linear-gradient(top, #fcfcfc, #f1f1f1);
+    background:-ms-linear-gradient(top, #fcfcfc, #f1f1f1);
+    background: linear-gradient(to bottom, #fcfcfc, #f1f1f1);
+}
+
+/* 浅色的渐变 */
+.fn-linear-light {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f9f9f9));
+    background: -moz-linear-gradient(top, #fcfcfc, #f9f9f9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f9f9f9');
+    background:-o-linear-gradient(top, #fcfcfc, #f9f9f9);
+    background:-ms-linear-gradient(top, #fcfcfc, #f9f9f9);
+    background: linear-gradient(to bottom, #fcfcfc, #f9f9f9);
+}
+
+/* 人民币符号 */
+.fn-rmb {
+    font-family: arial;
+    font-style: normal;
+    padding-right: 4px;
+}
+/*圆角*/
+.brc5 {border-radius:5%;}
+.brc10 {border-radius:10%;}
+.brc15 {border-radius:15%;}
+.brc20 {border-radius:20%;}
+.brc30 {border-radius:30%;}
+.brc40 {border-radius:40%;}
+.brc50 {border-radius:50%;}
+.brc60 {border-radius:60%;}
+.brc70 {border-radius:70%;}
+/* chrome 下字体过小的问题 */
+.fn-webkit-adjust {
+    -webkit-text-size-adjust: none;
+}
+/*行内元素和内联元素的转换*/
+.blockElement {
+	display:block;
+}
+.inlineElement {
+	display:inline;
+}
+/*文字排版*/
+.f12{font-size: 12px;}
+.f13{font-size: 13px;}
+.f14{font-size: 14px;}
+.f15{font-size: 15px;}
+.f16{font-size: 16px;}
+.f17{font-size: 17px;}
+.f18{font-size: 18px;}
+.f20{font-size: 20px;}
+.f25{font-size: 25px;}
+.f30{font-size: 30px;}
+.f40{font-size: 40px;}
+.f50{font-size: 50px;}
+.f60{font-size: 60px;}
+.f80{font-size: 80px;}
+.fb{font-weight: bold;}
+.fn{font-weight: normal;}
+.t2{text-indent: 2rem;}
+.unl{text-decoration: underline;}
+.no_unl{text-decoration: none;}
+/*颜色*/
+.colorWhite {
+	color:#fff;
+}
+.colorBlack {
+	color:#000;
+}
+/*背景*/
+.backgroundWhite {
+	background:white;
+}
+.backgroudBlack {
+	background: black;
+}
+/*去除margin的值*/
+.removeMargin {
+	margin:0;
+}
+.removeMarginTop {
+	margin-top:0;
+}
+.removeMarginRight {
+	margin-right:0;
+}
+.removeMarginBottom {
+	margin-bottom:0;
+}
+.removerMarginLeft {
+	margin-left:0;
+}
+/*去除padding的值*/
+.removePadding {
+	padding:0;
+}
+.removePaddingTop {
+	padding-top:0;
+}
+.removePaddingRight {
+	padding-right:0;
+}
+.removePaddingBottom {
+	padding-bottom:0;
+}
+.removePaddingLeft {
+	padding-left:0;
+}
+/*定位*/
+.tl{text-align: left;}
+.tc{text-align: center;}
+.tr{text-align: right;}
+.bc{margin-left: auto;margin-right: auto;}
+.fl{float: left;display: inline;}
+.fr{float: right;display: inline;}
+.cb{clear: both;}
+.vt{vertical-align: top;}
+.vm{vertical-align: middle;}
+.pr{position: relative;}
+.pa{position: absolute;}
+.pf{position: fixed;}
+.abs-right{position: absolute;right: 0;}
+.zoom{zoom:1;}
+.hidden{visibility: hidden;}
+.none{display: none;}
+.block{display: block;}
+.z999{z-index: 999;}
+.z998{z-index: 998;}
+.z997{z-index: 997;}
+.z1{z-index: 1;}
+
+/*长度高度*/
+.w10{width: 10px;}
+.w20{width: 20px;}
+.w30{width: 30px;}
+.w40{width: 40px;}
+.w50{width: 50px;}
+.w60{width: 60px;}
+.w70{width: 70px;}
+.w80{width: 80px;}
+.w90{width: 90px;}
+.w100{width: 100px;}
+.w105{width: 105px;}
+.w120{width: 120px;}
+.w150{width: 150px;}
+.w180{width:180px;}
+.w200{width: 200px;}
+.w220{width: 220px;}
+.w246{width: 246px;}
+.w250{width: 250px;}
+.w290{width: 290px;}
+.w300{width: 300px;}
+.w400{width: 400px;}
+.w480{width: 480px;}
+.w500{width: 500px;}
+.w600{width: 600px;}
+.w700{width: 700px;}
+.w800{width: 800px;}
+.w_25{width: 25%;}
+.w_30{width: 30%;}
+.w_40{width: 40%;}
+.w_50{width: 50%;}
+.w_60{width: 60%;}
+.w_70{width: 70%;}
+.w_80{width: 80%;}
+.w_90{width: 90%;}
+.w_100{width: 100%;}
+.h10{height:10px;}
+.h20{height:20px;}
+.h30{height:30px;}
+.h40{height:40px;}
+.h50{height: 50px;}
+.h60{height: 60px;}
+.h70{height: 70px;}
+.h80{height: 80px;}
+.h100{height: 100px;}
+.h200{height: 200px;}
+.h400{height:400px;}
+.h900{height:900px;}
+.h{height: 100%;}
+
+/*边距*/
+.m5{margin: 5px;}
+.m10{margin: 10px;}
+.m15{margin: 15px;}
+.m23{margin: 23px;}
+.m30{margin: 30px;}
+.mt5{margin-top: 5px;}
+.mt10{margin-top: 10px;}
+.mt13{margin-top: 13px;}
+.mt15{margin-top: 15px;}
+.mt20{margin-top: 20px;}
+.mt25{margin-top: 25px;}
+.mt30{margin-top: 30px;}
+.mt40{margin-top: 40px;}
+.mt50{margin-top: 50px;}
+.mt80{margin-top: 80px;}
+.mt100{margin-top: 100px;}
+.mt150{margin-top: 150px;}
+.mb5{margin-bottom: 5px;}
+.mb10{margin-bottom: 10px;}
+.mb15{margin-bottom: 15px;}
+.mb20{margin-bottom: 20px;}
+.mb30{margin-bottom: 30px;}
+.mb50{margin-bottom: 50px;}
+.mb100{margin-bottom: 100px;}
+.ml5{margin-left: 5px;}
+.ml10{margin-left: 10px;}
+.ml15{margin-left: 15px;}
+.ml20{margin-left: 20px;}
+.ml30{margin-left: 30px;}
+.ml50{margin-left: 50px;}
+.ml100{margin-left: 100px;}
+.ml240{margin-left: 240px;}
+.mr0{margin-right: 0px;}
+.mr5{margin-right: 5px;}
+.mr10{margin-right: 10px;}
+.mr15{margin-right: 15px;}
+.mr20{margin-right: 20px;}
+.mr24{margin-right: 24px;}
+.mr26{margin-right: 26px;}
+.mr30{margin-right: 30px;}
+.mr45{margin-right: 45px;}
+.mr50{margin-right: 50px;}
+.mr70{margin-right: 70px;}
+.mr100{margin-right: 100px;}
+.mr200{margin-right: 200px;}
+.mr_1{margin-right: 1%;}
+.mr_2{margin-right: 2%;}
+.mr_5{margin-right: 5%;}
+.mr_10{margin-right: 10%;}
+.p0{padding: 0px;}
+.p5{padding: 5px;}
+.p10{padding: 10px;}
+.p15{padding: 15px;}
+.p30{padding: 30px;}
+.p50{padding: 50px;}
+.p80{padding: 80px;}
+.pt5{padding-top: 5px;}
+.pt10{padding-top: 10px;}
+.pt15{padding-top: 15px;}
+.pt20{padding-top: 20px;}
+.pt30{padding-top: 30px;}
+.pt50{padding-top: 50px;}
+.pt80{padding-top: 80px;}
+.pt100{padding-top: 100px;}
+.ptc1 {padding-top:1%;}
+.ptc5 {padding-top:5%;}
+.ptc8 {padding-top:8%}
+.ptc10 {padding-top:10%;}
+.ptc15 {padding-top:15%;}
+.ptc17{padding-top:17%}
+.pb5{padding-bottom: 5px;}
+.pb10{padding-bottom: 10px;}
+.pb15{padding-bottom: 15px;}
+.pb20{padding-bottom: 20px;}
+.pb30{padding-bottom: 30px;}
+.pb50{padding-bottom: 50px;}
+.pb100{padding-bottom: 100px;}
+.pbc2{padding-bottom: 2%;}
+.pbc5{padding-bottom:5%;}
+.pbc10{padding-bottom: 10%;}
+.pbc15{padding-bottom: 15%;}
+.pbc16{padding-bottom: 16%;}
+.pbc20{padding-bottom: 20%;}
+.pl5{padding-left: 5px;}
+.pl10{padding-left: 10px;}
+.pl15{padding-left: 15px;}
+.pl20{padding-left: 20px;}
+.pl30{padding-left: 30px;}
+.pl50{padding-left: 50px;}
+.pl90{padding-left: 90px;}
+.pl100{padding-left: 100px;}
+.pr5{padding-right: 5px;}
+.pr10{padding-right: 10px;}
+.pr15{padding-right: 15px;}
+.pr20{padding-right: 20px;}
+.pr30{padding-right: 30px;}
+.pr50{padding-right: 50px;}
