@@ -8,6 +8,6 @@ exports.autoEnv = 'https://api.douban.com';
 
 
 //APIS
-exports.vueApis = {
+exports.apis = {
     getData:`${domain}v2/book/search?q='nba'`
 }
