@@ -1,11 +1,16 @@
+@import "./common";
+@import "./components/nav";
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
 footer{
   background: yellow;
 }
 header{
   background: #fc5144;
-}
-body{
-  text-align: center;
 }
 ul li{
   list-style: none;
