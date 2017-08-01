@@ -1,5 +1,3 @@
-@import "./common";
-@import "./components/nav";
 body{
   margin: 0;
   padding: 0;
@@ -7,10 +5,10 @@ body{
 }
 
 footer{
-  background: yellow;
+  background: green;
 }
 header{
-  background: #fc5144;
+  background: #fc6629;
 }
 ul li{
   list-style: none;
