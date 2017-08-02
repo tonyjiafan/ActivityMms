@@ -1,6 +1,6 @@
 'use strict'
 
-const config = require('../../config/config_1and1'),
+const config = require('../../config/test'),
       serverHttp = require('../../util/http.js'),
       _http = new serverHttp();
 
@@ -10,7 +10,7 @@ exports.url = function(app){
     let url = config.autoEnv + config.apis.getData;
         _http.commonHttp('GET', url, {}, function (data) {
           res.render('pages/test',{
-            layout:'index_1and1',
+            layout:'test',
             title:'test',
             allData:data.books,
             seaModule:'/static/js/test/test.js',  //没有使用模块化必须要配置完整的路劲和文件名

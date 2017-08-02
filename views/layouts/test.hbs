@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="charset" content="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,width=device-width,maximum-scale=1.0,user-scalable=0">
+ {{!--去除安卓IOS的电话号码转换问题--}}
+    <meta content="telephone=no" name="format-detection">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/static/css/base/base.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href={{cssModule}} media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <header>
+    {{>common_1and1/header}}
+  </header>
+
+  <div class="content-warp">
+      {{{body}}}
+  </div>
+
+  <footer>
+    {{>common_1and1/footer}}
+  </footer>
+</body>
+<script src="/static/js/base/sea.js" type="text/javascript"></script>
+<!-- seajs 的全局配置  -->
+<script type="text/javascript">
+        seajs.config({
+            base:'sea_module',
+            charset:'utf-8',
+            timeout:20000,
+            debug:0
+        })
+        seajs.use('{{seaModule}}');
+  //计算rem整体布局
+        (function (doc, win) {
+             var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+              var recalc = function () {
+                   var clientWidth = docEl.clientWidth;
+                   if (! clientWidth) return;
+                         var fontSize = 20 * (clientWidth / 320);
+                         if(fontSize> 33.75) fontSize = 33.75;
+                        docEl.style.fontSize = fontSize + 'px';
+            };
+             if (! doc.addEventListener) return;
+            recalc();
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false );
+      })(document, window);
+ </script>
+</html>
