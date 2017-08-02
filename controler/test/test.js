@@ -9,7 +9,8 @@ exports.url = function(app){
   app.get('/test',function(req,res){
     let url = config.autoEnv + config.apis.getData;
         _http.commonHttp('GET', url, {}, function (data) {
-          res.render('pages/test',{
+          console.log(data.books)
+          res.render('pages/test/test',{
             layout:'test',
             title:'test',
             allData:data.books,

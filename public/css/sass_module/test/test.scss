@@ -3,15 +3,25 @@ body{
   padding: 0;
   text-align: center;
 }
-
+.heade-and-footer{
+  height: 40px;
+  line-height: 40px;
+  font-size: 1rem;
+  color: #fff;
+}
 footer{
   background: green;
+  @extend .heade-and-footer;
 }
 header{
   background: #fc6629;
+  @extend .heade-and-footer;
 }
 ul li{
   list-style: none;
-  color: #666;
-  font-size: .7rem;
+  display: inline-block;
+  width: 4rem;
+  height: 5rem;
+  overflow: hidden;
+  border: 1px solid #01aef2;
 }
