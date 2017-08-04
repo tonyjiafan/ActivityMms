@@ -8,7 +8,7 @@ const config = require('../../config/test'),
 exports.url = function(app){
   app.get('/test2',function(req,res){
 
-    console.log(req.query.id)
+    console.log('id = ' + req.query.id)
 
     let url = config.autoEnv + config.apis.getData;
         _http.commonHttp('GET', url, {}, function (data) {

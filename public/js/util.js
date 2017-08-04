@@ -21,6 +21,15 @@ define(function(require,exports,module){
     })
   }
 
+  //获取url参数
+  exports.getQueryString = function (name, url) {
+			url = url || location.href;
+			var reg = new RegExp("(^|&|\\?)" + name + "=([^&]*)(&|$)", "i");
+			var r = url.substr(1).match(reg);
+			if (r != null) return unescape(r[2]);
+			return null;
+		}
+
 	//设置cookie
 		exports.setCookie = function(name,value) {
 		    var exp = new Date();

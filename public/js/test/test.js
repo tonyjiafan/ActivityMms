@@ -2,7 +2,8 @@ define(function(require,exports,module){
   //引入模块
   var $ = require('../base/jquery.min'),
       util = require('../util'),
-      reqAjax = util.reqAjax;
+      reqAjax = util.reqAjax,
+      getQueryString = util.getQueryString;
 
   console.log('我是test');
 
@@ -11,5 +12,7 @@ define(function(require,exports,module){
      return false;
    });
 
+  let type = getQueryString('type');
+  console.log('type = ' + type)
 
 }) //define闭合标记
