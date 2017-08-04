@@ -13,8 +13,8 @@ exports.url = function(app){
             layout:'index_1and1',
             title:'首页',
             allData:data.books,
-            seaModule:'/static/js/sea_module/1and1/index.js',  //没有使用模块化必须要配置完整的路劲和文件名
-            cssModule:'/static/css/css_module/1and1/index.css'   //没有使用模块化必须要配置完整的路劲和文件名
+            seaModule:'/static/js/sea_module/1and1/index.js?v=20170803',  //没有使用模块化必须要配置完整的路劲和文件名
+            cssModule:'/static/css/css_module/1and1/index.css?v=20170803'   //没有使用模块化必须要配置完整的路劲和文件名
           })
       })
   })

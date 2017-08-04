@@ -1,3 +1,13 @@
+/* H5-video设置  部分手机有下载但是会引起没有下载入口的手机浏览器的全屏按钮隐藏   */
+// video::-webkit-media-controls-enclosure {
+//     overflow:hidden;
+// }
+// video::-webkit-media-controls-panel {
+//     // width: calc(100% + 30px);
+//     width: calc(100% + 1.5rem);
+// }
+/* H5-video设置 */
+
 body{
   margin: 0;
   padding: 0;
@@ -24,4 +34,16 @@ ul li{
   height: 5rem;
   overflow: hidden;
   border: 1px solid #01aef2;
+}
+.video-warp{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.video-play{
+  width: 15rem;
+  height: 11rem0
+  // position: absolute;
+  // top: 10px;
+  // left: 10px;
 }

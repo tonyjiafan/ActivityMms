@@ -6,10 +6,13 @@ const config = require('../../config/test'),
 
 //index页面
 exports.url = function(app){
-  app.get('/test',function(req,res){
+  app.get('/test2',function(req,res){
+
+    console.log(req.query.id)
+
     let url = config.autoEnv + config.apis.getData;
         _http.commonHttp('GET', url, {}, function (data) {
-          res.render('pages/test/test',{
+          res.render('pages/test/test2',{
             layout:'test',
             title:'test',
             allData:data.books,

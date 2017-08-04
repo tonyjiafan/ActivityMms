@@ -1,6 +1,10 @@
 'use strict'
 define(function(require,exports,module){
-  var $ = require('./base/jquery.min');
+  var $ = require('./base/jquery.min'),
+      jsencrypt = require('./base/bin/jsencrypt.min');
+
+
+
   //ajax提交
   exports.reqAjax = function(type,url,data,callback){
       $.ajax({

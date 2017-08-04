@@ -1,5 +1,14 @@
 
 <h1 style="color:#fc5144;">测试页面</h1>
+
+<a href="/test2?id=1002&type=mp4">
+  <div class="video-warp">
+    <video id="video_play" class="video-play" controls="controls" autoplay="autoplay" poster="/static/images/test/poster.png">
+      <source src="/static/images/test/yoho.mp4" type="video/mp4">
+    </video>
+  </div>
+</a>
+
 <ul>
   {{#each allData}}
   <li><img src="{{images.small}}" alt="" /></li>

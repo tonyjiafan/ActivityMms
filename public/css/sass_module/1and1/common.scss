@@ -1,7 +1,15 @@
-footer{
+/*
+*项目色调配置
+*/
+$bgcolor: #fff;
+$fontsize: 14px;
+$fontcolor: #444;
+
+
+.footer{
   background: yellow;
 }
-header{
+.header{
   background: #fc5144;
 }
 body{
@@ -9,6 +17,6 @@ body{
 }
 ul li{
   list-style: none;
-  color: #666;
+  color: $fontcolor;
   font-size: .7rem;
 }
