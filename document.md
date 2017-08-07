@@ -12,9 +12,9 @@
 
 | 参数          |   类型   |  必传   |  含义  |  备注  |
 | :---------- | :----: | :---: | :--: | :--: |
-| projectType | String | false | 项目标识 | 项目名称 |
-| 3/5000      | String | true  | 用户账号 | 非空校验 |
-| Bù'ěr       | String | true  | 用户密码 | 非空校验 |
+| "projectType" | String | false | 项目标识 | 项目名称 |
+| "userNmae" | String | true  | 用户账号 | 非空校验 |
+| "userPassword" | String | true  | 用户密码 | 非空校验 |
 
 
 
