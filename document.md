@@ -29,14 +29,28 @@
     "userPhone": "13300456789",  //返回数据的类型 要标识
     "listData":  [
       {
-        "listName": "sdfgh001",  //返回数据的类型 要标识
-        "listInfor": "xcvbnmrtyu456789fghjk001",  //返回数据的类型 要标识
-        "listImageUrl": "http://swdebwdnikowgbnmhjomeo.png"  //返回数据的类型 要标识
+        "listName": "sdfgh001",  //String 用户名称
+        "userType": 0104,  //Boolean 用户类型编码
+        "listInfor": {
+          "xxxxx": "cvbsdnuimom213456",  //返回数据的类型 要标识
+          "xxxxx": "cvbsdnuimom213456",  //返回数据的类型 要标识
+          "xxxxx": "cvbsdnuimom213456",  //返回数据的类型 要标识
+          ...
+        },  
+        "listInfor": "xcvbnmrtyu456789fghjk001",  //返回数据的类型 要标
+        "listImageUrl": "http://swdebwdnikowgbnmhjomeo.png"  //返回数据的类型 要标识
       },
       {
-        "listName": "sdfgh002",  //返回数据的类型 要标识
-        "listInfor": "xcvbnmrtyu456789fghjk002",  //返回数据的类型 要标识
-        "listImageUrl": "http://swdebwdnikowgbnmhjomeo.png"  //返回数据的类型 要标识
+        "listName": "sdfgh002",  //String 用户名称
+        "userType": 0107,  //Boolean 用户类型编码
+        "listInfor": {
+          "xxxxx": "cvbsdnuimom213456",  //返回数据的类型 要标识
+          "xxxxx": "cvbsdnuimom213456",  //返回数据的类型 要标识
+          "xxxxx": "cvbsdnuimom213456",  //返回数据的类型 要标识
+          ...
+        },  
+        "listInfor": "xcvbnmrtyu456789fghjk002",  //返回数据的类型 要标
+        "listImageUrl": "http://swdebwdnikowgbnmhjomeo.png"  //返回数据的类型 要标识
       },
       {
         "listName": "sdfgh003",  //返回数据的类型 要标识
