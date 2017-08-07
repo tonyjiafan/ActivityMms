@@ -2,7 +2,7 @@
 
 ##### 说明
 
-* 如果是活动项目 "projectType" 参数 最好能传一个 "activity"    //能直观的识别是哪一个项目的请求
+* "projectType"  活动项目参数，最好能传一个 "activity_活动的名称"      //能直观的识别是哪一个项目的请求
 * 其他规范待续
 
 | 请求链接                                     | 提交方式 |
@@ -10,10 +10,10 @@
 | url: http://index/234568798...............asvjasbk.json | POST |
 
 
-| 参数          |   类型   |  必传   |  含义  |  备注  |
-| :---------- | :----: | :---: | :--: | :--: |
-| projectType | String | false | 项目标识 | 项目名称 |
-| userNmae | String | true  | 用户账号 | 非空校验 |
+| 参数           |   类型   |  必传   |  含义  |  备注  |
+| :----------- | :----: | :---: | :--: | :--: |
+| projectType  | String | false | 项目标识 | 项目名称 |
+| userNmae     | String | true  | 用户账号 | 非空校验 |
 | userPassword | String | true  | 用户密码 | 非空校验 |
 
 
