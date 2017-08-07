@@ -23,7 +23,7 @@
 ```
 {
   "code": 200,  //请求返回的状态码
-  "success": true,  //访问是否成功
+  "massage": "hbkjncsdcbinm45678",  //返回信息
   "datas": {
     "userId": 0007,  //用户ID
     "userPhone": "13300456789",  //返回数据的类型 要标识
