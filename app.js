@@ -22,7 +22,7 @@ router.urls(app);
 
 //引用express-handlebars模板引擎
 app.engine('.hbs',exphbs({
-		defaultLayout: 'index',  //默认布局模板为mindex.hbs
+		defaultLayout: 'index',
 		extname:'.hbs'
 	})
 );
