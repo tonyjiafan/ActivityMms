@@ -75,8 +75,22 @@
 
 
 
+#####  [项目部署相关](http://www.jianshu.com/p/ee935729f49c)
+
+
+
+##### [模板引擎语法 ==> Handlebars](http://www.ghostchina.com/introducing-the-handlebars-js-templating-engine/)
+
+
+
+#####  [Sass语法](http://www.sasschina.com/guide/)
+
+
+
+##### [npm生态](https://www.npmjs.com/)
+
 ##### 结语
 
 ```
-    整个项目的基本配置如上所述，后期在项目实际开发过程中会遇到很多拓展模块和组件以及一些依赖模块的注入，具体根据项目需求而定了解第3方依赖模块请上[https://www.npmjs.com/]。
+    整个项目的基本配置如上所述，后期在项目实际开发过程中会遇到很多拓展模块和组件以及一些依赖模块的注入，具体根据项目需求而定了解第3方依赖模块请点击 npm生态 查看。
 ```
