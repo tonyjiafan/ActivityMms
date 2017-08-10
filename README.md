@@ -36,7 +36,7 @@
     │   │   ├── test
     │   │   └── util  // 封装了ajax以及cookie操作等
     ├── util
-    │   └── http.js  // 封装了http请求以及cookie操作等
+    │   └── http.js  // 封装了http请求
     ├── views  // 视图层
     │   ├── layouts
     │   │   ├── index_1and1.hbs  // 主模板
