@@ -33,7 +33,8 @@
     │   └── js  // 前端js
     │   │   ├── base  // 公共
     │   │   ├── sea_module  // 下级目录是对应项目文件的js
-    │   │   └── test
+    │   │   ├── test
+    │   │   └── util  // 封装了ajax以及cookie操作等
     ├── util
     │   └── http.js  // 封装了http请求以及cookie操作等
     ├── views  // 视图层
