@@ -25,7 +25,8 @@
     "body-parser": "^1.15.0",
     "cookie-parser": "^1.4.1",
     "express": "^4.13.3",
-    "express-handlebars": "^2.0.1"
+    "express-handlebars": "^2.0.1",
+    "request": "^2.81.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
